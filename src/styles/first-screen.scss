@@ -37,3 +37,10 @@
         color: #99862A;
     }
 }
+
+
+@media (max-width: 1200px) {
+    .first-screen__body {
+        width: 100%;
+    }
+}
