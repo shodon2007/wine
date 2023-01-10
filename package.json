@@ -26,6 +26,7 @@
   "homepage": "https://github.com/shodon2007/wine#readme",
   "devDependencies": {
     "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.7.3",
     "html-webpack-plugin": "^5.5.0",
     "node-sass": "^8.0.0",

@@ -1,4 +1,5 @@
 .first-screen {
+    position: relative;
     width: 100vw;
     height: 100vh;
     background-image: url(../img/bg.png);
@@ -37,6 +38,7 @@
         color: #99862A;
     }
 }
+
 
 
 @media (max-width: 1200px) {
