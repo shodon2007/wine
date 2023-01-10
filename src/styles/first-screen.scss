@@ -2,11 +2,38 @@
     width: 100vw;
     height: 100vh;
     background-image: url(../img/bg.png);
-    background-color: cover;
+    background-size: cover;
     background-position: center center;
+    background-repeat: no-repeat;
 }
 
 .first-screen__body {
     width: 1200px;
+    height: 100vh;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.first-screen__buttons {
+    display: flex;
+    gap: 15px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.first-screen__button {
+    cursor: pointer;
+    transition: all 0.5s ease;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 15px 25px;
+    background-color: #99862A;
+    color: white;
+
+    &:hover {
+        background-color: white;
+        color: #99862A;
+    }
 }
