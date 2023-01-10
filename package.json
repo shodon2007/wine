@@ -1,0 +1,40 @@
+{
+  "name": "wine",
+  "version": "1.0.0",
+  "description": "hello this is description",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shodon2007/wine.git"
+  },
+  "keywords": [
+    "javascript",
+    "scss",
+    "webpack",
+    "html"
+  ],
+  "author": "shodon <about@shodon.ru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shodon2007/wine/issues"
+  },
+  "homepage": "https://github.com/shodon2007/wine#readme",
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.7.3",
+    "html-webpack-plugin": "^5.5.0",
+    "node-sass": "^8.0.0",
+    "sass-loader": "^13.2.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "dependencies": {
+    "style-loader": "^3.3.1"
+  }
+}
