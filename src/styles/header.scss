@@ -126,7 +126,9 @@
         flex-direction: column;
 
         &>span {
+            font-size: 13px;
             padding: 10px;
+            text-align: center;
         }
     }
 }

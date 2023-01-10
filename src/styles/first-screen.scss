@@ -46,3 +46,9 @@
         width: 100%;
     }
 }
+
+@media (max-width: 320px) {
+    .first-screen__buttons {
+        flex-direction: column;
+    }
+}
