@@ -28,4 +28,38 @@
 
 .taste__text {
     font-family: Montserrat;
+    font-size: 16px;
+}
+
+
+@media (max-width: 1200px) {
+    .taste__body {
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    .taste__body {
+        padding: 60px 100px;
+    }
+}
+
+@media (max-width: 500px) {
+    .taste__body {
+        padding: 50px 50px;
+    }
+}
+
+@media (max-width: 320px) {
+    .taste__body {
+        padding: 40px 20px;
+    }
+
+    .taste__text {
+        font-size: 14px;
+    }
+
+    .taste__line {
+        width: 80%;
+    }
 }
