@@ -1,0 +1,101 @@
+.sign {
+    background-color: #282828;
+    padding: 100px 0;
+}
+
+.sign__body {
+    overflow: visible;
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    border: 3px solid white;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 300px;
+    gap: 50px;
+}
+
+.sign__title {
+    z-index: 5;
+    background-color: #282828;
+    padding: 0 30px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-family: 'Playfair Display';
+}
+
+.sign__text {
+    font-size: 16px;
+    text-align: center;
+}
+
+.sign__form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 20px;
+
+    input {
+        font-size: 16px;
+        transition: all 0.5s ease;
+        color: #E6E3C4;
+        border: 0;
+        outline: 0;
+        border-bottom: 1px solid white;
+        padding: 15px 0;
+        background-color: transparent;
+
+        &::placeholder {
+            font-size: 16px;
+            color: white;
+        }
+
+        &:focus {
+            border-bottom: 1px solid #E6E3C4;
+        }
+    }
+}
+
+.form__adress {
+    grid-column-start: span 2;
+}
+
+.form__button {
+    cursor: pointer;
+    transition: all 0.5s ease;
+    padding: 15px 0;
+    font-size: 16px;
+    grid-column-start: span 2;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+
+    &:hover {
+        background-color: white;
+        color: #282828;
+    }
+}
+
+.sign__line {
+    width: 118px;
+    height: 1px;
+    background-color: white;
+}
+
+.sign__img {
+    position: absolute;
+}
+
+.sign__img.img1 {
+    top: -50px;
+    left: -10px;
+}
+
+.sign__img.img2 {
+    top: -50px;
+    right: -10px;
+}

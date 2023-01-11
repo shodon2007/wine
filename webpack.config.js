@@ -42,6 +42,14 @@ module.exports = {
                     from: path.resolve(__dirname, 'src/img/history-img__sright.png'),
                     to: path.resolve(__dirname, 'dist/img')
                 },
+                {
+                    from: path.resolve(__dirname, 'src/img/sign.png'),
+                    to: path.resolve(__dirname, 'dist/img')
+                },
+                {
+                    from: path.resolve(__dirname, 'src/img/sign2.png'),
+                    to: path.resolve(__dirname, 'dist/img')
+                },
             ]
         }),
     ],
