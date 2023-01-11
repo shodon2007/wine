@@ -1,0 +1,101 @@
+.history {
+    background-color: #E6E3C4;
+    padding: 50px 0;
+}
+
+.history__body {
+    width: 1200px;
+    padding: 60px 0;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    border-top: 2px solid #998431;
+    border-bottom: 2px solid #998431;
+}
+
+.history__left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.history__news {
+    font-size: 16px;
+    font-family: Montserrat;
+    color: black;
+}
+
+.history__title {
+    font-size: 36px;
+    font-family: 'Playfair Display';
+}
+
+.history__line {
+    width: 160px;
+    height: 2px;
+    background-color: #282828;
+}
+
+.history__text {
+    font-family: Montserrat;
+}
+
+.history__button {
+    border: 2px solid #998431;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    width: max-content;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: white;
+    background-color: #998431;
+
+    &:hover {
+        background-color: #E6E3C4;
+        color: #998431;
+    }
+}
+
+.history__table {
+    width: max-content;
+    border-collapse: collapse;
+    border-spacing: 0px;
+
+    td {
+        padding: 24px;
+    }
+}
+
+.table__left {
+    border-right: 1px solid #282828;
+}
+
+.table__left.center {
+    border-bottom: 1px solid #282828;
+    border-top: 1px solid #282828;
+}
+
+.table__td.center {
+    border-bottom: 1px solid #282828;
+    border-top: 1px solid #282828;
+}
+
+.table__title {
+    font-family: 'Playfair Display';
+    font-size: 18px;
+}
+
+.history__right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+
+    & img {
+        width: 100%;
+    }
+}
+
+.history__right-big {
+    grid-column-start: span 2;
+}

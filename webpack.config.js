@@ -29,7 +29,19 @@ module.exports = {
                 {
                     from: path.resolve(__dirname, 'src/img/wine.png'),
                     to: path.resolve(__dirname, 'dist/img')
-                }
+                },
+                {
+                    from: path.resolve(__dirname, 'src/img/history-img__big.png'),
+                    to: path.resolve(__dirname, 'dist/img')
+                },
+                {
+                    from: path.resolve(__dirname, 'src/img/history-img__sleft.png'),
+                    to: path.resolve(__dirname, 'dist/img')
+                },
+                {
+                    from: path.resolve(__dirname, 'src/img/history-img__sright.png'),
+                    to: path.resolve(__dirname, 'dist/img')
+                },
             ]
         }),
     ],
