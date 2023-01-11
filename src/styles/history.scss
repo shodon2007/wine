@@ -99,3 +99,49 @@
 .history__right-big {
     grid-column-start: span 2;
 }
+
+
+@media (max-width: 1200px) {
+    .history__body {
+        width: 100%;
+        padding: 60px 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .history__right {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .history__right-big {
+        grid-row-start: span 2;
+    }
+}
+
+@media (max-width: 700px) {
+    .history__right {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .history__right {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .history__table {
+        width: 100%;
+
+        td {
+            padding: 10px;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .history__button {
+        font-size: 14px;
+        width: 100%;
+        padding: 10px 15px;
+    }
+}
