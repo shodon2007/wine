@@ -1,0 +1,31 @@
+.taste {
+    padding: 50px 0;
+    background-color: #282828;
+    color: white;
+    text-align: center;
+}
+
+.taste__body {
+    border: 3px solid white;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 60px 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.taste__line {
+    margin: 0 auto;
+    width: 180px;
+    height: 3px;
+    background-color: white;
+}
+
+.taste__title {
+    font-family: 'Playfair Display';
+}
+
+.taste__text {
+    font-family: Montserrat;
+}

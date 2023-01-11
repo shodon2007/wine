@@ -25,6 +25,10 @@ module.exports = {
                 {
                     from: path.resolve(__dirname, 'src/img/burger.png'),
                     to: path.resolve(__dirname, 'dist/img')
+                },
+                {
+                    from: path.resolve(__dirname, 'src/img/wine.png'),
+                    to: path.resolve(__dirname, 'dist/img')
                 }
             ]
         }),

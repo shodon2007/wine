@@ -3,4 +3,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Montserrat;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-x: hidden;
+}
+
+*::-webkit-scrollbar {
+    display: none;
 }
