@@ -2,10 +2,13 @@ const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
+
 
 module.exports = {
     context: path.resolve(__dirname, 'src'),
-    entry: './script/script.js',
+    entry: ['@babel/polyfill', './script/script.js'],
     output: {
         filename: '[contenthash].[name].js',
         path: path.resolve(__dirname, 'dist')
@@ -52,13 +55,29 @@ module.exports = {
                 },
             ]
         }),
+        new MiniCssExtractPlugin({
+            filename: '[contenthash].[name].css',
+        })
     ],
 
     module: {
         rules: [
             {
                 test: /\.scss$/,
-                use: ['style-loader', 'css-loader', 'sass-loader']
+                use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
+            },
+            {
+                test: /\.m?js$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: "babel-loader",
+                    options: {
+                        presets: ['@babel/preset-env'],
+                        plugins: [
+                            '@babel/plugin-proposal-class-properties'
+                        ]
+                    }
+                }
             }
         ]
     }
