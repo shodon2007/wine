@@ -18,6 +18,7 @@
 }
 
 .sign__title {
+    text-align: center;
     z-index: 5;
     background-color: #282828;
     padding: 0 30px;
@@ -98,4 +99,114 @@
 .sign__img.img2 {
     top: -50px;
     right: -10px;
+}
+
+
+@media (max-width: 1200px) {
+    .sign {
+        padding: 100px 20px;
+    }
+
+    .sign__body {
+        width: 100%;
+    }
+
+    .sign__img {
+        width: 200px;
+    }
+}
+
+@media (max-width: 930px) {
+    .sign__body {
+        padding: 80px 200px;
+    }
+
+    .sign__img {
+        width: 150px;
+    }
+}
+
+@media (max-width: 830px) {
+    .sign__title {
+        width: min-content;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 736px) {
+    .sign__body {
+        padding: 80px 100px;
+    }
+}
+
+@media (max-width: 550px) {
+    .sign__title {
+        font-size: 20px;
+    }
+
+    .sign__img {
+        width: 100px;
+    }
+
+    .sign__form {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 500px) {
+    .sign__body {
+        padding: 80px 50px;
+    }
+}
+
+@media (max-width: 400px) {
+    .sign__img {
+        display: none;
+    }
+}
+
+@media (max-width: 320px) {
+    .sign {
+        padding: 50px 20px;
+    }
+
+    .sign__body {
+        padding: 50px 30px;
+    }
+
+    .sign__form input {
+        font-size: 12px;
+        padding: 5px 0;
+
+        &::placeholder {
+            font-size: 12px;
+        }
+    }
+}
+
+@media (max-width: 230px) {
+    .sign {
+        padding: 50px 10px;
+    }
+
+    .sign__body {
+        padding: 40px 20px;
+    }
+
+    .sign__text {
+        font-size: 12px;
+    }
+
+    .form__button {
+        font-size: 12px;
+    }
+
+    .sign__title {
+        font-size: 16px;
+    }
+
+    .sign__line {
+        width: 80%;
+    }
 }
