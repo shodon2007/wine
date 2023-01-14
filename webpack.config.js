@@ -22,37 +22,9 @@ module.exports = {
         new CopyWebpackPlugin({
             patterns: [
                 {
-                    from: path.resolve(__dirname, 'src/img/exit.png'),
+                    from: path.resolve(__dirname, 'src/img'),
                     to: path.resolve(__dirname, 'dist/img')
-                },
-                {
-                    from: path.resolve(__dirname, 'src/img/burger.png'),
-                    to: path.resolve(__dirname, 'dist/img')
-                },
-                {
-                    from: path.resolve(__dirname, 'src/img/wine.png'),
-                    to: path.resolve(__dirname, 'dist/img')
-                },
-                {
-                    from: path.resolve(__dirname, 'src/img/history-img__big.png'),
-                    to: path.resolve(__dirname, 'dist/img')
-                },
-                {
-                    from: path.resolve(__dirname, 'src/img/history-img__sleft.png'),
-                    to: path.resolve(__dirname, 'dist/img')
-                },
-                {
-                    from: path.resolve(__dirname, 'src/img/history-img__sright.png'),
-                    to: path.resolve(__dirname, 'dist/img')
-                },
-                {
-                    from: path.resolve(__dirname, 'src/img/sign.png'),
-                    to: path.resolve(__dirname, 'dist/img')
-                },
-                {
-                    from: path.resolve(__dirname, 'src/img/sign2.png'),
-                    to: path.resolve(__dirname, 'dist/img')
-                },
+                }
             ]
         }),
         new MiniCssExtractPlugin({
